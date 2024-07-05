@@ -257,7 +257,7 @@ video {
 }
 
 .how-to-buy {
-  height: 700px;
+  height: 800px;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -265,9 +265,15 @@ video {
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
-  background-image: url("./449218688_379708221797058_1788835246949502858_n.png");
+  background-image: url("banner1.jpg");
   background-size: 100% 100%;
   z-index: 11;
+}
+
+.imggggg {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .how-to-buy::before {
