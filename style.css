@@ -1,0 +1,671 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playwrite DE Grund", cursive;
+  font-optical-sizing: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 2rem;
+  background-color: #F694C1;
+}
+
+.logo {
+  display: flex;
+}
+
+.token-name {
+  margin-right: 50px;
+  width: 150px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.token-name span {
+  text-transform: uppercase;
+}
+
+.token-name span:nth-child(1) {
+  top: -40px;
+  left: 0;
+  font-size: 3em;
+  position: absolute;
+}
+
+.token-name span:nth-child(2) {
+  font-size: 1.5em;
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  font-style: italic;
+}
+
+.contact {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact img {
+  border-radius: 50%;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./banner2.jpg");
+  background-repeat: no-repeat;
+  background-color: #1789fc;
+  z-index: 1;
+  background-position: center center;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden; /* Ensures no overflow from the pseudo-element */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0; /* Cover the full width */
+  bottom: 0; /* Cover the full height */
+  z-index: -1; /* Ensure it's below the content but above any negative stacked elements */
+  background-image: inherit; /* Inherit the background image from the parent */
+  filter: brightness(50%);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-color: inherit;
+}
+
+.intro .ca {
+  margin-top: 20px;
+  font-size: 2em;
+  color: white;
+}
+
+video {
+  border-radius: 20px;
+  border: 3px solid white;
+}
+
+.token-decorate {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.token-decorate span {
+  font-size: 5em;
+  font-weight: bold;
+  color: white;
+}
+
+.token-1 {
+  position: absolute;
+  left: -70px;
+}
+
+.token-2 {
+  position: absolute;
+  left: -35px;
+  top: -50px;
+}
+
+.token-3 {
+  position: absolute;
+  left: -35px;
+  top: -50px;
+}
+
+.token-4 {
+  position: absolute;
+  left: 25px;
+  top: -50px;
+}
+
+.token-5 {
+  position: absolute;
+  left: 85px;
+  top: -50px;
+}
+
+.token-6 {
+  position: absolute;
+  left: 145px;
+  top: -50px;
+}
+
+.token-7 {
+  position: absolute;
+  left: 205px;
+  top: -50px;
+}
+
+.token-8 {
+  position: absolute;
+  left: -35px;
+  bottom: -50px;
+}
+
+.token-9 {
+  position: absolute;
+  left: 25px;
+  bottom: -50px;
+}
+
+.token-10 {
+  position: absolute;
+  left: 85px;
+  bottom: -50px;
+}
+
+.token-11 {
+  position: absolute;
+  left: 145px;
+  bottom: -50px;
+}
+
+.token-12 {
+  position: absolute;
+  left: 205px;
+  bottom: -50px;
+}
+
+.token-13 {
+  position: absolute;
+  right: -70px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  border-width: 3px;
+  border-radius: 20px;
+  border-color: white !important;
+  border: solid;
+}
+
+.banner span {
+  width: 200px;
+  height: 100px;
+  z-index: 222;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border: 1px solid white;
+  border-radius: 10px;
+  transform: translate(-80px, 50px);
+  color: yellow;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  bottom: -5px;
+  left: 320px;
+}
+
+.img_change {
+  filter: brightness(100%);
+  animation: shinyEffect 1s infinite alternate ease-in-out;
+}
+
+@keyframes shinyEffect {
+  from {
+    filter: brightness(1) contrast(1);
+  }
+  to {
+    filter: brightness(1.2) contrast(1.5);
+  }
+}
+
+.img_change2 {
+  filter: brightness(100%);
+  animation: shinyEffect2 1s infinite alternate ease-in-out;
+}
+
+@keyframes shinyEffect2 {
+  from {
+    filter: brightness(1) contrast(1);
+  }
+  to {
+    filter: brightness(1.1) contrast(1);
+  }
+}
+
+.how-to-buy {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-image: url("./banner1.jpg");
+  background-size: 100% 50%;
+  z-index: 11;
+}
+
+.how-to-buy::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0; /* Cover the full width */
+  bottom: 0; /* Cover the full height */
+  z-index: -1; /* Ensure it's below the content but above any negative stacked elements */
+  background-image: inherit; /* Inherit the background image from the parent */
+  filter: brightness(50%);
+  background-size: inherit;
+  background-color: inherit;
+}
+
+.img1_flying {
+  position: absolute;
+  border-radius: 20px;
+  left: 70px;
+  top: 25%;
+  rotate: 30deg;
+}
+
+.img2_flying {
+  position: absolute;
+  border-radius: 20px;
+  right: 70px;
+  top: 15%;
+  rotate: 30deg;
+}
+
+.how-to-buy > span:nth-child(1) {
+  text-align: center;
+  background-color: #F694C1;
+  border: 3px solid white;
+  border-radius: 10px;
+  width: 40%;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 40px;
+}
+
+.how-to-buy > span > span {
+  color: yellow;
+  margin-left: 10px;
+}
+
+.steps {
+  margin-top: 50px;
+  padding: 50px 30px;
+  border-radius: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 5rem;
+}
+
+.step-box {
+  padding: 20px 30px;
+  border-radius: 20px;
+  gap: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.step-box div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step-box div span:nth-child(1) {
+  color: yellow;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.step-box div span:nth-child(2) {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.step-box > span {
+  font-weight: bold;
+  color: yellow;
+  font-size: 2rem;
+}
+
+.socials {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.socials span:nth-child(2) {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.socials span:nth-child(3) {
+  color: white !important;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.socials span {
+  color: white !important;
+}
+
+.socials div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.socials img {
+  border-radius: 50%;
+  background-color: white;
+}
+
+.token-flying1 {
+  color: #fdca40;
+  position: absolute;
+  rotate: -40deg;
+  font-size: 1.5em;
+  font-weight: 600;
+  left: 20%;
+  top: 60%;
+}
+
+.token-flying2 {
+  color: #fdca40;
+  position: absolute;
+  rotate: -40deg;
+  font-size: 1.5em;
+  font-weight: 600;
+  top: 70%;
+  left: 10%;
+}
+
+.token-flying3 {
+  color: #fdca40;
+  position: absolute;
+  font-weight: 600;
+  rotate: 40deg;
+  font-size: 1.5em;
+  top: 50%;
+  right: 10%;
+}
+
+.tx11 {
+  color: white;
+}
+
+.tx22 {
+  color: white;
+}
+
+.background {
+  z-index: -999;
+  position: absolute;
+  width: 100%;
+  background-image: url("./banner2.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: 100% 100%;
+  filter: brightness(50%);
+}
+
+.background img {
+  position: absolute;
+}
+
+.background img:nth-child(1) {
+  left: 20%;
+  top: 20%;
+  z-index: 11;
+}
+
+.background img:nth-child(2) {
+  right: 20%;
+  top: 20%;
+  z-index: 11;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+  color: black;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  font-size: 0.8em;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+@media only screen and (max-device-width: 450px) and (max-device-height: 950px) {
+    .logo img {
+      width: 50px;
+    }
+
+    .token-name span:nth-child(1) {
+      width: 100%;
+      position: absolute;
+      font-size: 1em;
+      left: 0;
+      top: -20px;
+    }
+
+    .token-name span:nth-child(2) {
+      width: 100%;
+      font-size: 0.7em;
+      left: 5px;
+      top: 5px;
+      text-align: center;
+      align-items: center;
+      position: absolute;
+    }
+
+    .header {
+      justify-content: space-evenly;
+    }
+
+    .contact img {
+      width: 30px;
+    }
+
+    .token-name {
+      margin-right: 0;
+      height: 100%;
+      width: 70px;
+      position: relative;
+    }
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      margin-left: 0;
+    }
+
+    
+    .intro .ca {
+      font-size: 1em;
+    }
+
+    .intro {
+      width: 100%;
+      height: 70vh;
+      padding-bottom: 40px;
+      background-image: url("./andy_logo-removebg-preview\ \(1\)\ \(1\).png");
+      background-position: center center;
+      background-color: #1789fc;
+      z-index: 1;
+      position: relative;
+      background-position: top;
+      overflow: hidden; /* Ensures no overflow from the pseudo-element */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      object-fit: contain;
+    }
+
+    .token-decorate > span:nth-child(1) {
+      font-size: 2em;
+    }
+
+    .token-11 {
+      display: none;
+    }
+
+    .token-12 {
+      display: none;
+    }
+
+    .token-6 {
+      display: none;
+    }
+
+    .token-7 {
+      display: none;
+    }
+
+    .banner {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .banner img {
+      width: 90%;
+    }
+
+    .banner span {
+      width: 100px;
+      height: 50px;
+      font-size: 0.7em;
+      text-align: center;
+      align-items: center;
+      left: 200px;
+      bottom: 10px;
+    }
+
+    .how-to-buy > span:nth-child(1) {
+      font-size: 1em;
+      height: 70px;
+      width: 60%;
+      padding: 10px 0;
+      text-align: center;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img1_flying {
+      bottom: 0;
+      left: 50px;
+      width: 50px;
+    }
+
+    .img2_flying {
+      bottom: 0;
+      right: 50px;
+      top: 150px;
+      width: 50px;
+    }
+
+    .steps {
+      width: 60%;
+      padding: 0;
+      gap: 10px;
+    }
+
+    .step-box {
+      gap: 15px;
+    }
+
+    .step-box div {
+      gap: 20px;
+    }
+
+    .step-box span {
+      font-size: 1.2em;
+    }
+
+    .step-box div span:nth-child(1) {
+      font-size: 1.2em;
+    }
+
+    .step-box div span:nth-child(2) {
+      font-size: 0.8em;
+    }
+
+    .token-flying1 {
+      left: 20px;
+    }
+
+
+    .token-flying2 {
+      left: 20px;
+      display: none;
+    }
+
+    .background img:nth-child(1) {
+      width: 200px;
+      z-index: 11;
+    }
+
+    .background img:nth-child(2) {
+      width: 200px;
+      right: 17%;
+      top: 51%;
+      z-index: 22;
+    }
+
+    .socials {
+      padding-bottom: 30px;
+      height: 60vh;
+    }
+}
