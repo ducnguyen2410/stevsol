@@ -528,6 +528,9 @@ video {
       margin-left: 0;
     }
 
+    .banner video {
+      margin-bottom: 40px
+    };
     
     .intro .ca {
       font-size: 1em;
