@@ -257,14 +257,16 @@ video {
 }
 
 .how-to-buy {
+  height: 60vh;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   position: relative;
-  background-image: url("./banner1.jpg");
-  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-image: url("./449218688_379708221797058_1788835246949502858_n.png");
+  background-size: 100% 100%;
   z-index: 11;
 }
 
@@ -279,6 +281,7 @@ video {
   background-image: inherit; /* Inherit the background image from the parent */
   filter: brightness(50%);
   background-size: inherit;
+  background-repeat: no-repeat;
   background-color: inherit;
 }
 
@@ -309,6 +312,7 @@ video {
   text-transform: uppercase;
   font-weight: bold;
   padding: 40px;
+  margin-top: 10%;
 }
 
 .how-to-buy > span > span {
